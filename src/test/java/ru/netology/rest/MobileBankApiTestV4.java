@@ -21,6 +21,6 @@ class MobileBankApiTestV4 {
                 .log().all()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
-                .body("currency", org.hamcrest.Matchers.hasItem("RUR"));
+                .body("currency", org.hamcrest.Matchers.hasItem("RUB"));
     }
 }
